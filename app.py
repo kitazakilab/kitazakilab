@@ -7,9 +7,9 @@ unit = 'hPa'
 while True:
     acc_values = [round(x,2) for x in motion.accelerometer()]
     output = """
-Temperature: {t:.2f}c
-Pressure: {p:.2f}{unit}
-Brightness: {c}
+気温: {t:.2f}c
+気圧: {p:.2f}{unit}
+照度: {c}
 """.format(
         unit = unit,
         t = weather.temperature(),
